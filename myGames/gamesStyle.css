@@ -1,0 +1,38 @@
+body{
+  background: #051742;
+  background: -moz-linear-gradient(top,  #051742 0%, #35486b 100%);
+  background: -webkit-linear-gradient(top,  #051742 0%,#35486b 100%);
+  background: -o-linear-gradient(top,  #051742 0%,#35486b 100%);
+  background: -ms-linear-gradient(top,  #051742 0%,#35486b 100%);
+  color:#fff;
+  font-family: 'Fenix', sans-serif;
+  font-size:16px;
+  height:960px;
+}
+h1{
+  font-size:40px;
+  margin:10px;
+}
+
+#container{
+  width:400px;
+  height:20px;
+  margin:auto;
+}
+#nav{
+
+}
+#nav ul li{
+  list-style: none;
+  display:inline;
+  margin-right: 10px;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+}
+#main{
+}
+
+
+

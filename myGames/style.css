@@ -1,0 +1,47 @@
+body{
+  background-image:url('http://imagesbackgrounds.in/hdwallpaper//anime-wallpaper/anime-wallpaper-hd-realistic-hd.jpg');
+  background-color:#cccccc;
+  background-position: center;
+  color:#000000;
+  font-family: 'Fenix', sans-serif;
+  font-size:16px;
+  height:950px;
+}
+h1{
+  font-size:80px;
+  margin:40px;
+  text-decoration: underline;
+}
+div {
+    width: 100px;
+    padding: 10px;
+    border: 10px double blue;
+    margin: 0px;
+    border-color: #000066
+}
+#container{
+  width:400px;
+  height:160px;
+  margin:left;
+  font-family: 'fenix', sans-serif;
+}
+#nav{
+
+}
+#nav ul li{
+  list-style: none;
+  display:inline;
+  margin-right: 10px;
+}
+a{
+  text-decoration: underline, bold;
+  color:#000000;
+}
+#main{
+}
+
+
+
+
+
+

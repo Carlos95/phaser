@@ -1,0 +1,55 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <title>Phaser - Making your first game, part 9</title>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'Desert', { preload: preload, create: create });
+
+function preload() {
+
+    game.load.tilemap('desert', 'assets/tilemaps/maps/desertexample.json', null, Phaser.Tilemap.TILED_JSON);
+
+    //  Next we load the tileset. This is just an image, loaded in via the normal way we load images:
+
+    game.load.image('tiles', 'assets/tilemaps/tiles/tmw_desert_spacing.png');
+
+} // Preload
+
+var map;
+var layer;
+
+function create() {
+
+    game.stage.backgroundColor = '#787878';
+
+    //  The 'desert' key here is the Loader key given in game.load.tilemap
+    map = game.add.tilemap('desert');
+
+    //  The first parameter is the tileset name, as specified in the Tiled map editor (and in the tilemap json file)
+    //  The second parameter maps this name to the Phaser.Cache key 'tiles'
+    map.addTilesetImage('desertexample', 'tiles');
+    
+    //  Creates a layer from the World1 layer in the map data.
+    //  A Layer is effectively like a Phaser.Sprite, so is added to the display list.
+    layer = map.createLayer('Ground');
+
+    //  This resizes the game world to match the layer dimensions
+    layer.resizeWorld();
+
+} // create
+
+</script>
+
+</body>
+</html>
