@@ -12,17 +12,20 @@ h1{
   margin:40px;
   text-decoration: underline;
 }
+Phaser-logo {
+  position: relative;
+  right: 100px;
+}
 div {
     width: 100px;
     padding: 10px;
-    border: 10px double dashed blue;
+    border: 10px double blue;
     margin: 0px;
     border-color: #000066
 }
 #container{
   width:400px;
   height:160px;
-  margin:left;
   font-family: 'fenix', sans-serif;
 }
 #nav{

@@ -1,0 +1,2 @@
+The player will need to score 10 goals with a ball.
+Player limit, plus small goal will increase difficulty. 

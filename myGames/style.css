@@ -12,6 +12,10 @@ h1{
   margin:40px;
   text-decoration: underline;
 }
+Phaser-logo {
+  position: relative;
+  right: 100px;
+}
 div {
     width: 100px;
     padding: 10px;
@@ -22,7 +26,6 @@ div {
 #container{
   width:400px;
   height:160px;
-  margin:left;
   font-family: 'fenix', sans-serif;
 }
 #nav{

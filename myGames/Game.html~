@@ -1,0 +1,31 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <title>My First Tile Map</title>
+    <script type="text/javascript" src="js/phaser.min.js"></script>
+    <script type="text/javascript" src="Level1.js"></script>
+    <link rel="stylesheet" type="text/css" href="gamesStyle.css"> 
+    
+
+</head>
+<body>
+  <h1>
+    <a href= "http://127.0.0.1:8080/phaser/myGames/"> Return to main page</a>
+  </h1>
+<div id="firstGame">
+<script type="text/javascript">
+window.onload = function() {
+ 
+  var game = new Phaser.Game(900, 600, Phaser.CANVAS, 'firstGame');
+
+
+  game.state.add('Level1' BasicGame.Game);
+
+  game.state.start('Level1');
+
+};
+</script>
+</div>
+</body>
+</html>

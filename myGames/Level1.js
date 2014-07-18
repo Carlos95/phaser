@@ -1,22 +1,4 @@
-<!doctype html> 
-<html lang="en"> 
-<head> 
-	<meta charset="UTF-8" />
-    <title>My First Tile Map</title>
-    <script type="text/javascript" src="js/phaser.min.js"></script>
-    <script type="text/javascript" src="Game.js"></script>
-    <link rel="stylesheet" type="text/css" href="gamesStyle.css"> 
-    
-
-</head>
-<body>
-  <h1>
-    <a href= "http://127.0.0.1:8080/phaser/myGames/"> Return to main page</a>
-  </h1>
-<div id="container">
-<script type="text/javascript">
-
-/*var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'House', { preload: preload, create: create, update: update, render: render });
+var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'House', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
 
@@ -81,7 +63,7 @@ function create() {
     player.animation.add('up', [10 , 11, 12, 13, 14], 10, true);
     player.animation.add('down',[1, 2, 3, 4], 10, true); */
     
- /*   //  Our controls.
+    //  Our controls.
     cursors = game.input.keyboard.createCursorKeys();
     
     // The camera follows the player
@@ -172,10 +154,7 @@ function render() {
     }
 
 
-} // render 
-*/
+} // render
 
-</script>
-</div>
-</body>
-</html>
+
+
