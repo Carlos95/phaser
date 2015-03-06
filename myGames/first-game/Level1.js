@@ -1,5 +1,5 @@
 
-BasicGame.Game = function (game) {
+BasicGame.Level1 = function (game) {
 
 // When a State is added to Phaser it automatically has the following properties set on it, even if they already exist:
 
@@ -32,7 +32,7 @@ var player;
 var button;
 var paper;
 
-BasicGame.Game.prototype = {
+BasicGame.Level1.prototype = {
 
 create: function() {
  
@@ -102,7 +102,7 @@ create: function() {
 
 hitPaper: function (body1, body2) {
   body2.sprite.kill();
-  
+  this.state.start('Level2');
 }, // hitPaper
 
 fullScreen: function () {

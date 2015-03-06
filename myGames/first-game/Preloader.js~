@@ -26,7 +26,13 @@ this.load.setPreloadSprite(this.preloadBar);
 // As this is just a Project Template I've not provided these assets, swap them for your own.
 this.load.image('girl', '_site/css/anime-wallpaper-hd-realistic-hd.jpg');
 this.load.spritesheet('playButton', '_site/images/button_sprite_sheet.png', 193, 71);
-
+this.load.tilemap('house', 'assets/tilemaps/maps/myFirstHouse.json', null, Phaser.Tilemap.TILED_JSON);
+this.load.image('tiles', 'assets/tilemaps/tiles/house.png');
+this.load.image('dude', 'assets/playersprites/pikachu.png');
+this.load.image('paper', 'assets/objects/paper.png');
+// Level 2 assets
+//this.load.tilemap('pitch','assets/tilemaps/maps/football-pitch.json', null, Phaser.Tilemap.TILED_JSON);
+//this.load.image('tiles2', 'assets/tilemaps/tiles/maxresdefault.jpg');
 // + lots of other required assets here
 
 },

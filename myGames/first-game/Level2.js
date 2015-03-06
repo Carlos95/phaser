@@ -1,5 +1,4 @@
-
-BasicGame.Game = function (game) {
+BasicGame.Level2 = function (game) {
 
 // When a State is added to Phaser it automatically has the following properties set on it, even if they already exist:
 
@@ -30,18 +29,18 @@ var layer = {};
 var cursors;
 var player;
 var button;
-var paper;
 
-BasicGame.Game.prototype = {
+
+BasicGame.Level2.prototype = {
 
 create: function() {
  
     this.physics.startSystem(Phaser.Physics.P2JS);
 
     //  The 'house' key here is the Loader key given in game.load.tilemap
-    map = this.add.tilemap('house');
+    map = this.add.tilemap('pitch');
     // Map the .png files into the tiles cache
-    map.addTilesetImage('house', 'tiles');
+    map.addTilesetImage('pitch', 'tiles2');
     
     
     //  Creates a layer from the World1 layer in the map data.
@@ -54,12 +53,12 @@ create: function() {
     map.setCollisionBetween(1, 12);
     this.physics.p2.convertTilemap(map, layer[1]);
 
-    // Now we create the individual paper
-    paper = this.add.sprite(250, 500, 'paper');
-    paper.scale.setTo(0.7,0.7);
+    // Now we create the ball
+    // paper = this.add.sprite(250, 500, 'paper');
+    // paper.scale.setTo(0.7,0.7);
 
-    this.physics.p2.enable(paper, false);
-    paper.body.setRectangle(10, 10, 0, 0);
+    // this.physics.p2.enable(paper, false);
+    // paper.body.setRectangle(10, 10, 0, 0);
  
     // We create the player
     player = this.add.sprite(200, 250, 'dude');
@@ -91,7 +90,7 @@ create: function() {
     
     
     // We create a body specific callback
-    player.body.createBodyCallback(paper, this.hitPaper, this);
+    // player.body.createBodyCallback(paper, this.hitPaper, this);
     
     // Turn on impact events for the world.
      this.physics.p2.setImpactEvents(true);
@@ -120,7 +119,7 @@ gameOver: function () {
   this.add.tween(map).to( { alpha: 0 }, 2000, Phaser.Easing.Linear.None, true);
   this.add.tween(layer[0]).to( { alpha: 0 }, 2000, Phaser.Easing.Linear.None, true);
   this.add.tween(layer[1]).to( { alpha: 0 }, 2000, Phaser.Easing.Linear.None, true);
-  this.add.tween(paper).to( { alpha: 0 }, 2000, Phaser.Easing.Linear.None, true);
+  // this.add.tween(paper).to( { alpha: 0 }, 2000, Phaser.Easing.Linear.None, true);
   
 
 }, // gameOver 
